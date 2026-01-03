@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>銘柄無料診断 - Modern Version</title>
+<meta http-equiv="Content-Type" content="text/html;">
+<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<link href="static/css/style.css" rel="stylesheet" />
+<link href="static/css/modern-components.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17217217743"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17451537206"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'AW-17451537206');
+    gtag('config', 'G-22CGE5N4MF');
+
+    function gtag_report_conversion(url) {
+        var callback = function () {
+            if (typeof url !== 'undefined') {
+                window.location = url;
+            }
+        };
+        gtag('event', 'Add');
+        gtag('event', 'conversion', {
+            'send_to': 'AW-17451537206/LYOVCPPx1cEbELamxYFB',
+            'transaction_id': '',
+            'event_callback': callback
+        });
+        return false;
+    }
+</script>
+<style>
+    .modern-spinner {
+        width: 60px;
+        height: 60px;
+        border: 5px solid rgba(255, 255, 255, 0.2);
+        border-top: 5px solid #FFC107;
+        border-radius: 50%;
+        animation: spin 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
+    }
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+</style>
+</head>
+<body>
+    <div id="loading-overlay" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, #042c89, #431989); z-index: 9999; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+        <div class="modern-spinner"></div>
+        <div style="color: white; margin-top: 20px; font-size: 18px;">読み込み中...</div>
+    </div>
+
+    <div class="tan_div box_bg80" id="SonContent0" style="display: none;">
+        <div class="tan_content tan_400">
+            <div class="tan_title">
+                <span class="discuss"></span>
+                <div class="barbox">
+                    <div class="progress-container">
+                        <div class="chart-title" style="text-align:center; color:#000; margin-bottom: 5px;">市場分析</div>
+                        <div class="progress-bar-wrapper">
+                            <div class="charts progress-bar market-analysis" style="width:0px;"></div>
+                        </div>
+                    </div>
+                    <div class="progress-container">
+                        <div class="chart-title" style="text-align:center; color:#000; margin-bottom: 5px;">チャート分析</div>
+                        <div class="progress-bar-wrapper">
+                            <div class="charts1 progress-bar chart-analysis" style="width:0px;"></div>
+                        </div>
+                    </div>
+                    <div class="progress-container">
+                        <div class="chart-title" style="text-align:center; color:#000; margin-bottom: 5px;">ニュース分析</div>
+                        <div class="progress-bar-wrapper">
+                            <div class="charts2 progress-bar news-analysis" style="width:0px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dialog-modern" id="dialog5Modern">
+        <div class="close-btn tan_close"></div>
+        <div class="result center"
+            style="background:none; margin-top:0; line-height:50px; height:auto; padding-top:46px;" id="btn05">
+            <span class="cName" style="display:block;color:#2e3b88; margin-bottom:5px;font-size: 59px;"></span>
+        </div>
+        <div class="center bold" style="color:#2174D8;font-size:2.4rem;margin-bottom:15px;">株価<span class="sType">診断</span>レポートが生成されました。</div>
+
+        <div class="report-icons">
+            <div class="icon-item">
+                <svg class="folder-icon" viewBox="0 0 100 100">
+                    <rect x="10" y="25" width="80" height="60" fill="#FFC107" rx="5"/>
+                    <rect x="10" y="20" width="40" height="10" fill="#FFB300" rx="2"/>
+                    <rect x="20" y="35" width="60" height="40" fill="white" rx="3"/>
+                    <line x1="25" y1="45" x2="75" y2="45" stroke="#CCC" stroke-width="2"/>
+                    <line x1="25" y1="55" x2="75" y2="55" stroke="#CCC" stroke-width="2"/>
+                    <line x1="25" y1="65" x2="60" y2="65" stroke="#CCC" stroke-width="2"/>
+                    <circle cx="80" cy="75" r="15" fill="#4CAF50"/>
+                    <path d="M73 75 L77 79 L87 69" stroke="white" stroke-width="3" fill="none" stroke-linecap="round"/>
+                </svg>
+                <div class="icon-label">市場と業界<br>の予測</div>
+            </div>
+            <div class="icon-item">
+                <svg class="folder-icon" viewBox="0 0 100 100">
+                    <rect x="10" y="25" width="80" height="60" fill="#FFC107" rx="5"/>
+                    <rect x="10" y="20" width="40" height="10" fill="#FFB300" rx="2"/>
+                    <rect x="20" y="35" width="60" height="40" fill="white" rx="3"/>
+                    <line x1="25" y1="45" x2="75" y2="45" stroke="#CCC" stroke-width="2"/>
+                    <line x1="25" y1="55" x2="75" y2="55" stroke="#CCC" stroke-width="2"/>
+                    <line x1="25" y1="65" x2="60" y2="65" stroke="#CCC" stroke-width="2"/>
+                    <circle cx="80" cy="75" r="15" fill="#4CAF50"/>
+                    <path d="M73 75 L77 79 L87 69" stroke="white" stroke-width="3" fill="none" stroke-linecap="round"/>
+                </svg>
+                <div class="icon-label">2025年の<br>有望株</div>
+            </div>
+            <div class="icon-item">
+                <svg class="folder-icon" viewBox="0 0 100 100">
+                    <rect x="10" y="25" width="80" height="60" fill="#FFC107" rx="5"/>
+                    <rect x="10" y="20" width="40" height="10" fill="#FFB300" rx="2"/>
+                    <rect x="20" y="35" width="60" height="40" fill="white" rx="3"/>
+                    <line x1="25" y1="45" x2="75" y2="45" stroke="#CCC" stroke-width="2"/>
+                    <line x1="25" y1="55" x2="75" y2="55" stroke="#CCC" stroke-width="2"/>
+                    <line x1="25" y1="65" x2="60" y2="65" stroke="#CCC" stroke-width="2"/>
+                    <circle cx="80" cy="75" r="15" fill="#4CAF50"/>
+                    <path d="M73 75 L77 79 L87 69" stroke="white" stroke-width="3" fill="none" stroke-linecap="round"/>
+                </svg>
+                <div class="icon-label">7~15日の<br>株価予測</div>
+            </div>
+            <div class="icon-item">
+                <svg class="folder-icon" viewBox="0 0 100 100">
+                    <rect x="10" y="25" width="80" height="60" fill="#FFC107" rx="5"/>
+                    <rect x="10" y="20" width="40" height="10" fill="#FFB300" rx="2"/>
+                    <rect x="20" y="35" width="60" height="40" fill="white" rx="3"/>
+                    <line x1="25" y1="45" x2="75" y2="45" stroke="#CCC" stroke-width="2"/>
+                    <line x1="25" y1="55" x2="75" y2="55" stroke="#CCC" stroke-width="2"/>
+                    <line x1="25" y1="65" x2="60" y2="65" stroke="#CCC" stroke-width="2"/>
+                    <circle cx="80" cy="75" r="15" fill="#4CAF50"/>
+                    <path d="M73 75 L77 79 L87 69" stroke="white" stroke-width="3" fill="none" stroke-linecap="round"/>
+                </svg>
+                <div class="icon-label">取引アドバ<br>イス</div>
+            </div>
+            <div class="icon-item">
+                <svg class="folder-icon" viewBox="0 0 100 100">
+                    <rect x="10" y="25" width="80" height="60" fill="#FFC107" rx="5"/>
+                    <rect x="10" y="20" width="40" height="10" fill="#FFB300" rx="2"/>
+                    <rect x="20" y="35" width="60" height="40" fill="white" rx="3"/>
+                    <line x1="25" y1="45" x2="75" y2="45" stroke="#CCC" stroke-width="2"/>
+                    <line x1="25" y1="55" x2="75" y2="55" stroke="#CCC" stroke-width="2"/>
+                    <line x1="25" y1="65" x2="60" y2="65" stroke="#CCC" stroke-width="2"/>
+                    <circle cx="80" cy="75" r="15" fill="#4CAF50"/>
+                    <path d="M73 75 L77 79 L87 69" stroke="white" stroke-width="3" fill="none" stroke-linecap="round"/>
+                </svg>
+                <div class="icon-label">株の健全度<br>ランキング</div>
+            </div>
+        </div>
+
+        <p class="dialog5_prompt center" style="font-size:1.8rem;margin:1.5rem 5%;color:#333;line-height:1.6;">ボタンをタップするとLINE友だち追加画面に進みます。<span class="sType"></span>銘柄コード『<span class="sCode red"></span>』を送信していただくと、詳細な予測レポートを無料で受け取ることができます。</p>
+        <div class="btn-modern pulse dialog5_btn" id="tcSureBtn" style="margin:20px auto;background:linear-gradient(180deg,#FFE082 0%,#FFD54F 50%,#FFC107 100%);color:#030a3d;font-weight:bold;cursor:pointer;">
+            <p style="margin:0;font-size:1.6rem;"><span class="sType">診断</span>レポートをLINEで受け取る</p>
+        </div>
+    </div>
+    <div class="zhegai"></div>
+
+    <div class="main">
+        <div class="content">
+            <div class="lwtop">
+                <video autoplay muted loop playsinline preload="auto" id="backgroundVideo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+                    <source src="static/picture/backgroundvideo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="lvtt">
+                    <div class="bt">
+                        <div style="text-align: center; padding: 20px 20px;">
+                            <h1 style="color: #FFFFFF; font-size: 64px; margin: 0; font-weight: 900; letter-spacing: 3px; text-shadow: 2px 2px 4px rgba(0,0,0,0.8), 3px 3px 6px rgba(0,0,0,0.6), 4px 4px 8px rgba(0,0,0,0.4), inset -2px -2px 4px rgba(0,0,0,0.5), inset 2px 2px 4px rgba(255,255,255,0.1);">銘柄無料診断</h1>
+                            <div class="top-code-name">
+                                <span class="tcn-s1"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="head">
+                <div class="data-bg-modern">
+                    <div class="row">
+                        <div class="gupiao">
+                            <div class="t1">
+                                <div class="gName"></div>
+                                <div class="gCode center"></div>
+                                <div class="time" id="new_data"></div>
+                            </div>
+                            <div class="t2">
+                                <div class="arrow">
+                                    <span class="price"></span>
+                                    <div class="arrow-icon">
+                                        <div class="arrow-up"></div>
+                                    </div>
+                                </div>
+                                <div> <span class="change red"></span> <span class="changesPercentage red"></span> </div>
+                            </div>
+                        </div>
+                        <div class="stockinfo">
+                            <div class="tablecontent">
+                                <table style="border-spacing: 0px 30px;">
+                                    <thead>
+                                        <tr>
+                                            <th>始値</th>
+                                            <th>高値</th>
+                                            <th>終値</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="border">
+                                        <tr>
+                                            <td class="open"></td>
+                                            <td class="dayHigh"></td>
+                                            <td class="previousClose"></td>
+                                        </tr>
+                                        <tr style="height: 12px">
+                                            <td style="height: 12px;"></td>
+                                        </tr>
+                                    </tbody>
+                                    <thead style="margin-top:20px;">
+                                        <tr>
+                                            <th>安値</th>
+                                            <th>売買高</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="dayLow"></td>
+                                            <td class="volume"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-modern submitBtn1 center pulse animate__animated animate__infinite animate__pulse">
+                    <span class="tcname" style="display: inline;color:#030a3d; font-weight: bold;"></span>・診断開始
+                </div>
+            </div>
+            <div class="lwc2">
+                <div class="table-modern table1bg">
+                    <div class="tableOverflow">
+                        <table class="tableList"></table>
+                    </div>
+                </div>
+                <div class="btnBox-bg" style="padding-top:30px;">
+                    <div class="btn-modern submitBtn2 center pulse animate__animated animate__infinite animate__pulse">
+                        <span class="tcname" style="display: inline;color:#030a3d; font-weight: bold;"></span>・株価分析
+                    </div>
+                </div>
+                <div class="lwc21">
+                    <div style="text-align: center; padding: 40px 20px; background: linear-gradient(135deg, rgba(255,255,255,0.1), transparent); border-radius: 20px; box-shadow: 0 4px 16px rgba(0,0,0,0.2);">
+                        <svg viewBox="0 0 800 400" style="width: 100%; max-width: 800px;">
+                            <defs>
+                                <linearGradient id="tableGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#fff9e6;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#ffffff;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <rect x="20" y="20" width="760" height="360" fill="url(#tableGradient)" rx="15" stroke="#FFD54F" stroke-width="3"/>
+                            <rect x="30" y="30" width="740" height="60" fill="#FFE082" rx="10"/>
+                            <text x="400" y="70" text-anchor="middle" font-size="32" font-weight="bold" fill="#030a3d">株価分析データ</text>
+                            <line x1="40" y1="120" x2="760" y2="120" stroke="#FFD54F" stroke-width="2"/>
+                            <text x="100" y="160" font-size="24" fill="#030a3d">• 過去30日間の価格推移</text>
+                            <text x="100" y="200" font-size="24" fill="#030a3d">• テクニカル指標分析</text>
+                            <text x="100" y="240" font-size="24" fill="#030a3d">• 業界比較データ</text>
+                            <text x="100" y="280" font-size="24" fill="#030a3d">• リスク評価指標</text>
+                            <circle cx="650" cy="220" r="60" fill="#4CAF50" opacity="0.9"/>
+                            <path d="M620 220 L640 240 L680 200" stroke="white" stroke-width="6" fill="none" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-modern submitBtn3 center pulse animate__animated animate__infinite animate__pulse">
+                <span class="tcname" style="display: inline;color:#030a3d; font-weight: bold;"></span>株価・AI予測
+            </div>
+        </div>
+        <div class="legal-disclosure">
+            <h3>金融商品取引法に基づく重要事項</h3>
+
+            <div class="disclosure-section">
+                <h4>【投資リスクに関する警告】</h4>
+                <p>株式投資には、市場リスク、利率リスク、信用リスク、流動性リスク、為替リスク等が伴います。これらのリスクにより、投資元本を割り込む可能性があります。</p>
+                <p>過去の運用実績は将来の成果を保証するものではありません。市場環境の変化により、予想外の損失が発生する可能性があります。</p>
+            </div>
+
+            <div class="disclosure-section">
+                <h4>【情報の正確性について】</h4>
+                <p>本サービスで提供される情報は、信頼できると判断した情報源から取得していますが、その正確性、完全性、適時性を保証するものではありません。</p>
+                <p>提供される情報は参考情報としてご利用ください。投資判断の際は、必ずご自身で情報の正確性をご確認ください。</p>
+            </div>
+
+            <div class="disclosure-section">
+                <h4>【投資判断の責任】</h4>
+                <p>最終的な投資判断は、利用者ご自身の責任において行ってください。本サービスは、特定の金融商品の購入、売却、保有を推奨するものではありません。</p>
+                <p>投資を行う際は、必ず証券会社等の金融商品取引業者にご相談ください。</p>
+            </div>
+
+            <div class="disclosure-section">
+                <h4>【登録情報】</h4>
+                <p>当サービス提供者は金融商品取引業者ではなく、金融商品取引法第29条に基づく登録を受けた事業者ではありません。</p>
+                <p>そのため、個別の投資助言や資産運用サービスを提供することはできません。</p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Copyright © 株式会社結禾テクノロジーズ 2025</p>
+            <p>
+                <a href="/contact/disclaimer.html"><span style="margin: 0 0 0 5px;">免責事項</span></a> | 
+                <a href="/contact/terms.html"><span style="margin: 0 0 0 5px;">利用規約</span></a> | 
+                <a href="/contact/privacy.html"><span style="margin: 0 0 0 5px;">個人情報保護方針</span></a> | 
+                <a href="/contact/risk.html"><span style="margin: 0 0 0 5px;">リスク情報</span></a>
+            </p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/modern-animations.js"></script>
+    <script src="static/js/main-modern.js"></script>
+    <script>
+        var width = parseInt(window.screen.width);
+        var scale = width / 750;
+        $('#viewport').attr('content', 'width=640,user-scalable=no,initial-scale=' + scale);
+    </script>
+</body>
+</html>
